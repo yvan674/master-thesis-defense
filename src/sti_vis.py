@@ -108,7 +108,7 @@ def plot_image(array: np.ndarray, title: str, save_name: str):
 def main():
     # Generate sine wave
     print("Generating sine wave...")
-    wave = generate_sine_wave(120, 0.1, 15)
+    wave = generate_sine_wave(120, np.pi / 60., 15)
 
     print("Calculating polar transform...")
     polar = gaf_polar_transform(wave)
